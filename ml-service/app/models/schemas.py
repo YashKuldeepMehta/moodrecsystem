@@ -22,6 +22,4 @@ class MoodResult(BaseModel):
     raw_emotions: Optional[dict] = None  # only included in debug mode
 
 
-class ErrorDetail(BaseModel):
-    detail: str
-    code: str
+
