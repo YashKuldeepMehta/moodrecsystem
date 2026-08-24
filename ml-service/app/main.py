@@ -36,10 +36,3 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(emotion.router, prefix="", tags=["Emotion Detection"])
-app.include_router(sentiment.router, prefix="", tags=["Sentiment Analysis"])
-
-
-@app.get("/health")
-async def health():
-    return {"status": "ok", "service": "mood-ml"}

@@ -18,12 +18,7 @@ public class MoodHistory {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
-
-    @Column(nullable = false)
-    private String mood;
+ 
 
     @Column(nullable = false, precision = 4, scale = 3)
     private BigDecimal confidence;
