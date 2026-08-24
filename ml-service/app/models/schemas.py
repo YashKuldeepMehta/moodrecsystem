@@ -16,10 +16,4 @@ class ImageRequest(BaseModel):
 
 
 
-class MoodResult(BaseModel):
-    mood: str
-    confidence: float = Field(..., ge=0.0, le=1.0)
-    raw_emotions: Optional[dict] = None  # only included in debug mode
-
-
 
