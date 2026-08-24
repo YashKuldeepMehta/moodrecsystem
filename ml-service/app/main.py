@@ -7,9 +7,6 @@ from app.routers import emotion, sentiment
 from app.services.face_service import FaceService
 from app.services.text_service import TextService
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
